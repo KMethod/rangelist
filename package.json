@@ -15,6 +15,15 @@
     "babel-preset-es2015": "^6.24.1",
     "eslint": "^7.32.0",
     "eslint-plugin-jest": "^24.4.0",
-    "jest": "^27.1.0"
+    "ghooks": "^2.0.4",
+    "jest": "^27.1.0",
+    "semver-regex": "^2.0.0",
+    "conventional-commit-types": "^2.2.0"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run lint",
+      "commit-msg": "node ./scripts/validate-commit-msg.js"
+    }
   }
 }
