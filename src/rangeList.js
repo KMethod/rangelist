@@ -4,7 +4,6 @@ module.exports = class RangeList {
       this.rangeList = [];
     }
 
-
     /**
       * Adds a range to the list
       * @param {Array<number>} range - Array of two integers that specify
